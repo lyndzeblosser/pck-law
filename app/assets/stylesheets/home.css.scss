@@ -1,0 +1,39 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+	
+#home {
+	margin: 0 0 20px 0;
+
+	.banner {
+		float: left;
+		width: 100%;
+	}
+
+	.copy {
+		float: left;
+		width: 620px;
+		padding: 10px 0 0 20px;
+		
+		h1 {
+			font-size: 24px;
+			line-height: 28px;
+			font-weight: 600;
+			color: #001f32;
+		}
+		
+		img {
+			float: left;
+			margin: 20px 0 0 0;
+		}
+	}
+	
+	#facebook {
+		float: right;
+		width: 300px;
+		padding: 30px 20px 0 0;
+	}
+	
+}

@@ -1,0 +1,463 @@
+.site-contents {
+	position: relative;
+	float: left;
+	width: 980px;
+	padding: 5px 0 0 0;
+	margin: 0 0 20px 0;
+	
+	.wrapper {
+		float: left;
+		width: 940px;
+		padding: 0 0 20px 0;
+		
+		.indicator {
+			position: absolute;
+			z-index: 10;
+			left: 20px;
+			top: 52px;
+			width: 300px;
+			height: 34px;
+			background: url(/assets/static/sidenav/indicator.png) no-repeat;
+			/* every 34px*/
+		}
+		
+		.second {top: 87px;}
+		.third {top: 120px;}
+		.fourth {top: 154px;}
+		.fifth {top: 188px;}
+		.sixth {top: 222px;}
+		
+		.sidebar.mid { min-height: 900px;}
+		.sidebar.long { min-height: 1200px;}
+		.sidebar.ex-long { min-height: 2500px;}
+		.sidebar {
+			float: left;
+			width: 300px;
+			min-height: 800px;
+			margin: 30px 0 0 20px;
+			background: #feffff; /* Old browsers */
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE2JSIgc3RvcC1jb2xvcj0iI2UyZWNmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk1JSIgc3RvcC1jb2xvcj0iI2UyZWNmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+			background: -moz-linear-gradient(top,  #feffff 0%, #e2ecf3 16%, #e2ecf3 95%, #ffffff 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(16%,#e2ecf3), color-stop(95%,#e2ecf3), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #feffff 0%,#e2ecf3 16%,#e2ecf3 95%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #feffff 0%,#e2ecf3 16%,#e2ecf3 95%,#ffffff 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #feffff 0%,#e2ecf3 16%,#e2ecf3 95%,#ffffff 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #feffff 0%,#e2ecf3 16%,#e2ecf3 95%,#ffffff 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+			
+
+			/* // needs latest Compass, add '@import "compass"' to your scss
+			background-color: #feffff; // Old browsers
+			@include filter-gradient(#feffff, #ffffff, vertical); // IE6-9
+			@include background-image(linear-gradient(top,  #feffff 0%,#e2ecf3 16%,#e2ecf3 95%,#ffffff 100%));
+			*/
+			
+			.directory {
+				float: left;
+				width: 300px;
+				height: 26px;
+				margin: 20px 0 5px 10px;
+				background: url(/assets/static/sidenav/title/practice-areas.png) no-repeat top left;
+				
+				a {
+					display: block;
+					width: 300px;
+					height: 26px;
+				}
+			}
+			
+			nav {
+				position: relative;
+				float: left;
+				width: 300px;
+				padding: 0 0 40px 0;
+				text-align: left;
+				border-top: 1px solid #d9e4ec;
+				
+				ul {
+					list-style: none;
+					padding: 0;
+					margin: 0;
+					
+					li:hover { background-color: #d9e4ec;}
+					
+					li {
+						float: left;
+						width: 300px;
+						height: 34px;
+						padding: 0;
+						background: url(/assets/static/sidenav/line.png) repeat-x bottom left;
+						
+						a {
+							display: block;
+							float: left;
+							width: 290px;
+							padding: 0 0 0 10px;
+							
+							line-height: 34px;
+							font-weight: 400;
+							text-decoration: none;
+							color: #0f0501;
+						}
+					}
+				}
+			}
+		}
+		
+		.copy {
+			float: right;
+			width: 620px;
+			padding: 0 20px 0 20px;
+			margin: 20px 0 0 0;
+			text-align: left;
+			
+			h1 {
+				margin: 0 0 10px 0;
+				font-size: 30px;
+				font-weight: 600;
+				text-transform:uppercase;
+				text-align: right;
+				color: #eee;
+			}
+			
+			h2 {
+				color: #03446d;
+				font-size: 16px;
+			}
+			
+			h3 {
+				margin: 0;
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: 600;
+				text-transform:uppercase;
+				color: #03446d;
+			}
+			
+			h4 {
+				margin: 0;
+				font-size: 12px;
+				line-height: 20px;
+				font-weight: 600;
+				text-transform:uppercase;
+				color: #03446d;
+			}
+			
+			h5 {
+				margin: 0 0 10px 0;
+				font-size: 10px;
+				line-height: 16px;
+				font-weight: 600;
+				color: #434343;
+				
+				a { color: #384E5D;}
+			}
+			
+			blockquote {
+				font-size: 12px;
+				font-weight: 400;
+				font-style: italic;
+				color: #434343;
+			}
+			
+			p { margin: 0 0 10px 0;}
+			
+			p.line {
+				padding: 0 0 10px 0;
+				margin: 0 0 10px 0;
+				border-bottom: #eee solid 1px;
+			}
+			
+			b { color: #03446d;}
+			
+			a { 
+				color: #384E5D;
+			}
+			a:hover { color: #6e808a;}
+			
+			ul {
+				float: left;
+				width: 290px;
+				padding: 0 0 0 20px;
+				margin: 10px 0 20px 0;
+				list-style: disc url("sqpurple.gif");
+				
+				li {
+					line-height: 30px;
+				}
+			}
+			
+			img { margin: 10px 0 10px 0;}
+			
+			.cb { clear: both; }
+			
+		}
+	}	
+}
+
+
+#attorneys-page {
+	.directory {
+		float: left;
+		width: 300px;
+		height: 26px;
+		margin: 20px 0 5px 10px;
+		background: url(/assets/static/sidenav/title/attorneys.png) no-repeat top left;
+	}
+	
+	span {
+		float: left;
+		width: 100%;
+		margin: 15px 0 0 0;
+		color: #03446d;
+		font-size: 16px;
+	}
+	
+	span.line { 
+		padding: 0 0 10px 0;
+		margin: 30px 0 0 0;
+		border-bottom: #eee solid 1px;
+	}
+	
+	.profile {
+		float: left;
+		width: 300px;
+		margin: 10px 0 0 0;
+		
+		img {
+			float: right;
+			width: 302px;
+			margin: 0 0 20px 0;
+		}
+	}
+	
+	.blurb.right { float: right;}
+	.blurb {
+		float: left;
+		width: 300px;
+		height: 234px;
+		margin: 0 0 10px 0;
+		background: url(/assets/static/attorneys/profile-small-pic/profile-bg.jpg) no-repeat bottom left;
+		
+		img { float: right;}
+		
+		.details {
+			float: left;
+			width: 175px;
+			height: 105px;
+			padding: 35px 0 0 10px;
+		
+			i {
+				float: left;
+				width: 150px;
+				margin: 0 0 10px 0;
+				font-size: 12px;
+				font-weight: 500;
+				color: #777;			
+			}
+		}
+		
+		.email { 
+			float: left;
+			width: 150px;
+			padding: 0 0 0 10px;
+			
+			h5 { 
+				margin: 0; 
+				
+				a { 
+					width: 100%; 
+					height: 0;
+					margin: 0;
+				}
+			}
+		}
+		
+		.phone { 
+			float: right;
+			padding: 0 20px 0 0;
+			
+			h5 { margin: 0; }
+		}
+		
+		a {
+			display: block;
+			float: left;
+			width: 290px;
+			height: 40px;
+			margin: 10px 0 0 0;
+		}
+	}
+}
+
+#resources-page {
+	.directory {
+		float: left;
+		width: 300px;
+		height: 26px;
+		margin: 20px 0 5px 10px;
+		background: url(/assets/static/sidenav/title/resources.png) no-repeat top left;
+	}
+}
+
+#our-approach-page {
+	.directory {
+		float: left;
+		width: 300px;
+		height: 26px;
+		margin: 20px 0 5px 10px;
+ 		background: url(/assets/static/sidenav/title/our-approach.png) no-repeat top left;
+	}
+	
+	form {
+		float: left;
+		width: 580px;
+		padding: 20px;
+		margin: 20px 0 20px 0;
+		border-top: #f5f5f5 solid 1px;
+		background: url(/assets/static/our-approach/form-bg.png) no-repeat bottom left;
+	}
+	
+	img.space { margin: 20px 0 0 0;}
+	
+	.map { 
+		float: right;
+		margin: 10px 0 0 0;
+	}
+
+	.location {
+		float: left;
+		width: 300px;
+		margin: 10px 0 35px 0;
+		
+		address {
+			margin: 0 0 5px 0;
+			font-size: 13px;
+			font-weight: 400;
+			font-style: normal;
+			color: #777;
+		}
+		
+		number.right { 
+			float: right;
+			padding: 0 35px 0 0;
+		}
+		
+		number {
+			float: left;
+			font-size: 13px;
+			line-height: 24px;
+			font-weight: 600;
+			font-style: normal;
+			color: #03446d;
+			
+			span {
+				font-size: 13px;
+				font-weight: 400;
+				font-style: normal;
+				color: #777;
+			}	
+		}
+		
+		.email {
+			float: left;
+			font-size: 13px;
+			line-height: 24px;
+			font-weight: 600;
+			font-style: normal;
+			color: #03446d;
+		}
+	}
+	
+	.hours {
+		float: left;
+		width: 300px;
+		
+		row {
+			float: left;
+			width: 300px;
+			
+			span {
+				font-size: 13px;
+				line-height: 20px;
+				font-weight: 400;
+				font-style: normal;
+				color: #777;
+			}
+			
+			.day {
+				float: left;
+				width: 150px;
+			}
+			
+			.time {
+				float: right;
+				width: 150px;
+			}
+		}
+	}
+	
+		
+	i { 
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 500;
+		font-style: italic;
+		color: #af2620;
+		
+		span { color: #777;}
+	}
+	
+	img.client { margin: 20px 0 0 0;}
+	.statement.last { margin: 20px 0 30px 0;}
+	.statement {
+		float: left;
+		width: 600px;
+		padding: 20px 5px 10px 5px;
+		margin: 10px 0 0 0;
+		text-align: right;
+		background: url(/assets/static/our-approach/statement-bg.png) repeat-x bottom left;
+		
+		.phrases {
+			float: left;
+			width: 215px;
+			
+			span {
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: 400;
+				text-transform:uppercase;
+				color: #777;
+			}
+			
+			span.light {
+				font-size: 20px;
+				line-height: 24px;
+				font-weight: 300;
+				text-transform:lowercase;
+				color: #03446d;
+			}
+		}
+		
+		.quote {
+			float: right;
+			width: 360px;
+			text-align: left;
+			
+			span {
+				font-size: 12px;
+				line-height: 16px;
+				font-weight: 400;
+				color: #03446d;
+			}
+			
+			blockquote {
+				margin: 5px 0 0 0;
+				padding: 0;
+				font-size: 11px;
+			}
+			
+		}
+	}
+}
