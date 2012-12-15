@@ -410,6 +410,8 @@
 	}
 	
 	img.client { margin: 20px 0 0 0;}
+	
+	.statement.first { margin: 0; padding: 0px 5px 10px 5px;}
 	.statement.last { margin: 20px 0 30px 0;}
 	.statement {
 		float: left;
@@ -438,6 +440,11 @@
 				text-transform:lowercase;
 				color: #03446d;
 			}
+			
+			a {
+				display: block;
+				width: 100%;
+			}
 		}
 		
 		.quote {
@@ -454,10 +461,27 @@
 			
 			blockquote {
 				margin: 5px 0 0 0;
-				padding: 0;
+				padding: 0; 
 				font-size: 11px;
 			}
 			
+		}
+		
+		.summary {
+			float: right;
+			width: 360px;
+			text-align: left;
+			
+			h3 {
+				text-decoration: uppercase;
+			}
+			
+			span {
+				margin: 5px 0 0 0;
+				padding: 0; 
+				font-size: 10px;
+				line-height: 12px;
+			}
 		}
 	}
 }
