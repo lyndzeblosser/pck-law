@@ -8,14 +8,14 @@
 			</div>
 			<nav>
 				<ul>
-					<li><%= link_to('Randall Pentiuk', '/attorneys/randall-pentiuk') %></li>
-					<li><%= link_to('Joseph Couvreur', '/attorneys/joseph-couvreur') %></li>
-					<li><%= link_to('Kurt Kobiljak', '/attorneys/kurt-kobiljak') %></li>
-					<li><%= link_to('Kerry Morgan', '/attorneys/kerry-morgan') %></li>
-					<li><%= link_to('Michael Hurley', '/attorneys/michael-hurley') %></li>
-					<li><%= link_to('Creighton Gallup', '/attorneys/creighton-gallup') %></li>
+					<li><%= link_to('Randall A. Pentiuk', '/attorneys/randall-pentiuk') %></li>
+					<li><%= link_to('Joseph G. Couvreur', '/attorneys/joseph-couvreur') %></li>
+					<li><%= link_to('Kurt M. Kobiljak', '/attorneys/kurt-kobiljak') %></li>
+					<li><%= link_to('Kerry Lee Morgan', '/attorneys/kerry-morgan') %></li>
+					<li><%= link_to('Michael P. Hurley', '/attorneys/michael-hurley') %></li>
+					<li><%= link_to('Creighton D. Gallup', '/attorneys/creighton-gallup') %></li>
 					<li><%= link_to('April Knoch', '/attorneys/april-knoch') %></li>
-					<li><%= link_to('Brittny Harris', '/attorneys/brittny-harris') %></li>
+					<li><%= link_to('Brittny K. Harris', '/attorneys/brittny-harris') %></li>
 				</ul>
 			</nav>
 		</div>
@@ -23,12 +23,14 @@
 		<div class="copy">
 			<h1>Attorneys</h1>
 			
-			<h2>RANDALL A. PENTIUK- Managing Shareholder</h2>
+			<h2>Randall A. Pentiuk- Managing Shareholder</h2>
 			
-			<%= image_tag'static/attorneys/profile-large-pic/randall-a-pentiuk.jpg', :alt => 'Randall Pentiuk Managing Shareholder Attorney at PCK Law' %>
+			<%= image_tag'static/attorneys/profile-large-pic/randall-a-pentiuk.jpg', :alt => 'Randall Pentiuk Managing Shareholder Attorney at PCK Law', :class => 'profile' %>
 			
 			<div class="profile">
-				<h4>LAW SCHOOL</h4>
+				<h5><%= mail_to('rpentiuk@pck-law.com', 'rpentiuk@pck-law.com') %> | Phone: (734) 281-7100 ext. 105</h5>
+				
+				<h4 class="law">LAW SCHOOL</h4>
 				<h5>Detroit College of Law 1989, Detroit Michigan</h5>
 
 				<h4>COLLEGE</h4>
@@ -36,10 +38,9 @@
 				- School of Business Administration</h5>
 
 				<h4>AREAS OF PRACTICE</h4>
-				<h5>General Practice</h5>
-
-				<h4>CONTACT HIM</h4>
-				<h5>rpentiuk@pck-law.com | Phone: (734) 281-7100 ext. 105</h5>
+					<ul class="practice">
+						<li>General Practice</li>
+					</ul>
 			</div>
 			
 			<div class="cb"></div>

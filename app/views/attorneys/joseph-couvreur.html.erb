@@ -1,58 +1,73 @@
-<div class="site-contents" id="attorneys">
-	<div class="headline">
-		<h2>Attorneys</h2>
-	</div>
-	
+<div class="site-contents" id="attorneys-page">
 	<div class="wrapper">
-		<div class="indicator"></div>
+		<div class="indicator third"></div>
 		
-		<div class="sidebar">
+		<div class="sidebar mid">
+			<div class="directory">
+				<%= link_to('', '/attorneys') %>
+			</div>
+			<nav>
+				<ul>
+					<li><%= link_to('Randall A. Pentiuk', '/attorneys/randall-pentiuk') %></li>
+					<li><%= link_to('Joseph G. Couvreur', '/attorneys/joseph-couvreur') %></li>
+					<li><%= link_to('Kurt M. Kobiljak', '/attorneys/kurt-kobiljak') %></li>
+					<li><%= link_to('Kerry Lee Morgan', '/attorneys/kerry-morgan') %></li>
+					<li><%= link_to('Michael P. Hurley', '/attorneys/michael-hurley') %></li>
+					<li><%= link_to('Creighton D. Gallup', '/attorneys/creighton-gallup') %></li>
+					<li><%= link_to('April Knoch', '/attorneys/april-knoch') %></li>
+					<li><%= link_to('Brittny K. Harris', '/attorneys/brittny-harris') %></li>
+				</ul>
+			</nav>
 		</div>
 		
 		<div class="copy">
-			<h1>Joseph G. Couvreur - Shareholder</h1>
+			<h1>Attorneys</h1>
 			
-			Areas Of Practice
-
-
-			General Practice 
-			Email: jcouvreur@pck-law.com
-
-			Phone: (734) 281-7100 ext. 106 
-
-			LAW SCHOOL
-
-			Wayne State University, J.D. 1988
-			COLLEGE
-
-			Wayne State University’s, B.A. public administration 1985
+			<h2>Joseph G. Couvreur - Shareholder</h2>
 			
-			<ul>
-				<li class="headline">Practice Areas</li>
-				<li>General Business</li>
-				<li>Real Estate</li>
-				<li>Wills, Trusts, and Probate</li>
-				<li>Municipal</li>
-				<li>Non-profit</li>
-				<li>Civil Litigation</li>
-				<li>Housing Cooperatives</li>
-				<li>Professional Affiliations</li>
-				<li>State Bar of Michigan</li>
-				<li>Real Property Law Section, State of Michigan</li>
+			<%= image_tag'static/attorneys/profile-large-pic/joseph-couvreur.jpg', :alt => 'Joseph Couvreur Shareholder and Attorney at PCK Law', :class => 'profile' %>
+			
+			<div class="profile">
+				<h5><%= mail_to('jcouvreur@pck-law.com', 'jcouvreur@pck-law.com') %> | Phone: (734) 281-7100 ext. 106</h5>
+				
+				<h4 class="law">LAW SCHOOL</h4>
+				<h5>Wayne State University, J.D. 1988</h5>
+
+				<h4>COLLEGE</h4>
+				<h5>Wayne State University’s</br>
+				-  B.A. Public Administration 1985</h5>
+			
+				<h4>AREAS OF PRACTICE</h4>
+				<ul class="practice">
+					<li>Real Estate</li>
+					<li>Wills, Trusts, and Probate</li>
+					<li>Municipal</li>
+					<li>Non-profit</li>
+					<li>Civil Litigation</li>
+					<li>Housing Cooperatives</li>
+					<li>Professional Affiliations</li>
+					<li>State Bar of Michigan</li>
+					<li>Real Property Law Section, State of Michigan</li>
+				</ul>
+			</div>
+			
+			<ul class="practice">
 				<li>Tax Law Section, State of Michigan</li>
 				<li>Probate and Estate Planning</li>
 				<li>Civil Litigation</li>
 				<li>Housing Cooperatives</li>
 				<li>Professional Affiliations</li>
 			</ul>
+						
+			<div class="cb"></div>
 			
-			<p>Joseph G. Couvreur, is a shareholder with Randall A. Pentiuk and Kurt M. Kobiljak at the firm of Pentiuk, Couvreur, & Kobiljak, P.C. He has been with the firm since its inception. Joseph is lead attorney on business and estate planning matters at Pentiuk, Couvreur, & Kobiljak, P.C. He advises business owners regarding all types of business matters including financing, employment and transactional matters. He handles the preparation of estate planning documents, which are drafted to minimize or avoid probate proceedings. He also handles probate estates through various procedures whenever probate is necessary.</p>
+			<p>Joseph G. Couvreur, is a shareholder with Randall A. Pentiuk and Kurt M. Kobiljak at the firm of Pentiuk, Couvreur, &amp; Kobiljak, P.C. He has been with the firm since its inception. Joseph is lead attorney on business and estate planning matters at Pentiuk, Couvreur, &amp; Kobiljak, P.C. He advises business owners regarding all types of business matters including financing, employment and transactional matters. He handles the preparation of estate planning documents, which are drafted to minimize or avoid probate proceedings. He also handles probate estates through various procedures whenever probate is necessary.</p>
 
-			<p>Joseph Couvreur works closely with Randall A. Pentiuk in matters involving municipalities and government related development organizations. Mr. Couvreur serves as Assistant Corporate Counsel for Melvindale. He has worked with municipalities on real estate, election and Freedom of Information matters. In the past he has acted as prosecutor for the <%= link_to('City of Melvindale', 'http://www.melvindale.org/' ,:target => '_blank') %> and the <%= link_to('City of Riverview', 'http://www.cityofriverview.com/', :target => '_blank') %>. He has worked with municipal Downtown Development Authorities and Economic Development Corporations to carry out economic growth and revitalization projects to strengthen communities. Joseph Couvreur has worked with non-profit associations such as cooperatives and housing authorities, advising the governing boards, negotiating and drafting contracts, obtaining and facilitating financing and assisting such entities to follow the dictates of the entities governing documents and applicable laws. Mr. Couvreur has worked closely with cooperatives to obtain refinancing and when necessary approval from the Department of Housing and Urban Development.</p>
+			<p>Joseph Couvreur works closely with Randall A. Pentiuk in matters involving municipalities and government related development organizations. Mr. Couvreur serves as Assistant Corporate Counsel for Melvindale. He has worked with municipalities on real estate, election and Freedom of Information matters. In the past he has acted as prosecutor for the <%= link_to('City of Melvindale', 'http://www.melvindale.org/', :target => '_blank') %> and the <%= link_to('City of Riverview', 'http://www.cityofriverview.com/', :target => '_blank') %>. He has worked with municipal Downtown Development Authorities and Economic Development Corporations to carry out economic growth and revitalization projects to strengthen communities. Joseph Couvreur has worked with non-profit associations such as cooperatives and housing authorities, advising the governing boards, negotiating and drafting contracts, obtaining and facilitating financing and assisting such entities to follow the dictates of the entities governing documents and applicable laws. Mr. Couvreur has worked closely with cooperatives to obtain refinancing and when necessary approval from the Department of Housing and Urban Development.</p>
 
 			<p>Mr. Couvreur is a lifetime resident of the Detroit area, residing for most of his life in Allen Park. He has a bachelor's degree in public administration with a concentration in public policy analysis from Wayne State University. Mr. Couvreur graduated from Wayne State Law School in 1988. In 1989, he joined with Randall A. Pentiuk to start an employment relationship that would continue into what we now know as Pentiuk, Couvreur, &amp; Kobiljak, P.C.</p>
 
-			<p>Mr. Couvreur's community-minded outlook started even back while he was at law school, as he served on the Board of Directors of a Free Legal Aid Clinic, which provided free legal services to those unable to provide for themselves. Currently, he is active in Downriver Community Christian Church, serving as a Sunday School teacher. He has provided legal services to Christ Net, a non-profit homeless shelter. Mr. Couvreur was the former director of Grateful Home, a shelter for battered women and children in Detroit. The work of Grateful Home in providing shelter and education for women and children continues to be provided by the Detroit Rescue Mission Ministries. He has also conducted numerous legal seminars on topics such as the Freedom of Information Act and Estate Planning. He also serves on the <%= link_to('Southern Wayne County Chamber of Commerce Board', 'http://www.swcrc.com/', :target="_blank") %> and graduated from Vision 21.</p>
+			<p>Mr. Couvreur's community-minded outlook started even back while he was at law school, as he served on the Board of Directors of a Free Legal Aid Clinic, which provided free legal services to those unable to provide for themselves. Currently, he is active in Downriver Community Christian Church, serving as a Sunday School teacher. He has provided legal services to Christ Net, a non-profit homeless shelter. Mr. Couvreur was the former director of Grateful Home, a shelter for battered women and children in Detroit. The work of Grateful Home in providing shelter and education for women and children continues to be provided by the Detroit Rescue Mission Ministries. He has also conducted numerous legal seminars on topics such as the Freedom of Information Act and Estate Planning. He also serves on the <%= link_to('Southern Wayne County Chamber of Commerce Board', 'http://www.swcrc.com/', :target=> "_blank") %> and graduated from Vision 21.</p>
 		</div>
 	</div>
 </div>

@@ -1,61 +1,81 @@
-<div class="site-contents" id="attorneys">
-	<div class="headline">
-		<h2>Attorneys</h2>
-	</div>
-	
+<div class="site-contents" id="attorneys-page">
 	<div class="wrapper">
-		<div class="indicator"></div>
+		<div class="indicator fourth"></div>
 		
-		<div class="sidebar">
+		<div class="sidebar mid">
+			<div class="directory">
+				<%= link_to('', '/attorneys') %>
+			</div>
+			<nav>
+				<ul>
+					<li><%= link_to('Randall A. Pentiuk', '/attorneys/randall-pentiuk') %></li>
+					<li><%= link_to('Joseph G. Couvreur', '/attorneys/joseph-couvreur') %></li>
+					<li><%= link_to('Kurt M. Kobiljak', '/attorneys/kurt-kobiljak') %></li>
+					<li><%= link_to('Kerry Lee Morgan', '/attorneys/kerry-morgan') %></li>
+					<li><%= link_to('Michael P. Hurley', '/attorneys/michael-hurley') %></li>
+					<li><%= link_to('Creighton D. Gallup', '/attorneys/creighton-gallup') %></li>
+					<li><%= link_to('April Knoch', '/attorneys/april-knoch') %></li>
+					<li><%= link_to('Brittny K. Harris', '/attorneys/brittny-harris') %></li>
+				</ul>
+			</nav>
 		</div>
 		
 		<div class="copy">
-			<h1>Kurt Kobiljak - Shareholder</h1>
+			<h1>Attorneys</h1>
 			
-			Areas Of Practice
-
-
-			General Practice 
-			Email: kkobiljak@pck-law.com
-
-			Phone: (734) 281-7100 ext. 106 
-
-			LAW SCHOOL
-
-			University of Detroit Law School, J.D. 1991
-			COLLEGE
-
-			Albion College, B.A. Economic | Management and History, Cum Laude 1988
-			Cranbrook Educational Community 1984
+			<h2>Kurt Kobiljak - Shareholder</h2>
 			
-			<p>Kurt Kobiljak joined Pentiuk, Couvreur and Kobiljak in 1991, and became a shareholder in 1996. His specialties include business and creditor disputes. He is the corporation counsel for a number of statewide Credit Unions and Banks, with an emphasis on collections, bankruptcy, and policy facilitation matters. Mr. Kobiljak also represents numerous condominium associations, a business clientele that includes property management companies, physicians, dentists and automotive dealers.</p>
-
-			<p>Embodying the firm’s community-wide scope, Kurt’s expert legal knowledge is buttressed by his active involvement in the Downriver community: served as Grosse Ile Township Supervisor 2004-2008, founder of numerous philanthropic organizations, and volunteer on a number of boards and local associations. A lifetime resident of Grosse Ile Michigan, Kurt is married to Kristen Kobiljak, an elementary school teacher in Wyandotte, Michigan, and has three children, Katie, Stefan and Hayden.</p>
+			<%= image_tag'static/attorneys/profile-large-pic/kurt-m-kobiljak.jpg', :alt => 'Kurt Kobiljak Shareholder and Attorney at PCK Law', :class => 'profile' %>
 			
-			<ul>
-				<li class="headline">Practice Areas</li>
-				<li>Credit Union and Bank Representation</li>
-				<li>Bankruptcy Defense Representation</li>
-				<li>Civil Defense Litigation</li>
-				<li>Commercial and Individual Creditor Rights</li>
-				<li>Commercial and Individual Transactions</li>
-				<li>Condominium Association Representation and Defense</li>
+			<div class="profile">
+				<h5><%= mail_to('kkobiljak@pck-law.com', 'kkobiljak@pck-law.com') %> | Phone: (734) 281-7100 ext. 106</h5>
+				
+				<h4 class="law">LAW SCHOOL</h4>
+				<h5>University of Detroit Law School, J.D. 1991</h5>
+
+				<h4>COLLEGE</h4>
+						
+				<h5>Albion College, B.A. Economic</br> 
+				- Management and History, Cum Laude 1988</h5>
+
+				<h5>Cranbrook Educational Community 1984</h5>
+
+
+				<h4>AREAS OF PRACTICE</h4>
+					<ul class="practice">
+						<li>Credit Union and Bank Representation</li>
+						<li>Bankruptcy Defense Representation</li>
+						<li>Civil Defense Litigation</li>
+						<li>Commercial and Individual Creditor Rights</li>
+						<li>Commercial and Individual Transactions</li>
+						<li>Condominium Association Representation &amp; Defense</li>
+
+					</ul> 
+			</div>
+			
+			<ul class="practice">
 				<li>Estate Planning</li>
 				<li>Financial Institution Representation</li>
 				<li>Municipal Law</li>
 				<li>Real Estate</li>
 			</ul>
 			
-			<ul>
-				<li class="headline">Professional Affiliations</li>
+			<h4>Professional Affiliations</h4>
+			<ul class="practice">
 			   	<li>State Bar of Michigan</li>
 			   	<li>American Bar Association</li>
 			   	<li>American Bankruptcy Institute</li>
 			</ul>
+
+			<div class="cb"></div>
 			
-			<ul>
-				<li class="headline">Community Associations/Services</li>
-			   	<li><%= link_to('Kurt Kobiljak Elected Grosse Ile Township Supervisor 2004 to 2008', 'http://www.detnews.com/2004/nngrosseile/0412/29/r02-44174.htm', :target => '_blank' %></li>
+			<p>Kurt Kobiljak joined Pentiuk, Couvreur and Kobiljak in 1991, and became a shareholder in 1996. His specialties include business and creditor disputes. He is the corporation counsel for a number of statewide Credit Unions and Banks, with an emphasis on collections, bankruptcy, and policy facilitation matters. Mr. Kobiljak also represents numerous condominium associations, a business clientele that includes property management companies, physicians, dentists and automotive dealers.</p>
+
+			<p class="space">Embodying the firm’s community-wide scope, Kurt’s expert legal knowledge is buttressed by his active involvement in the Downriver community: served as Grosse Ile Township Supervisor 2004-2008, founder of numerous philanthropic organizations, and volunteer on a number of boards and local associations. A lifetime resident of Grosse Ile Michigan, Kurt is married to Kristen Kobiljak, an elementary school teacher in Wyandotte, Michigan, and has three children, Katie, Stefan and Hayden.</p>
+			
+			<h3>Community Associations / Services</h3>
+			<ul class="full">
+			   	<li><%= link_to('Kurt Kobiljak Elected Grosse Ile Township Supervisor 2004 to 2008', 'http://www.detnews.com/2004/nngrosseile/0412/29/r02-44174.htm', :target => '_blank') %></li>
 			   	<li>Grosse Ile Township Treasurer, 2000-2004 (Elected Official)</li>
 			   	<li>Grosse Ile Township Board of Trustees, 1996-2000 (Elected Official)</li>
 			   	<li>Grosse Ile Planning Commissioner, 1991-present (Appointed official)</li>
