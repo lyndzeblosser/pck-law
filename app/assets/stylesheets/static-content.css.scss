@@ -223,13 +223,15 @@
 	.profile {
 		float: left;
 		width: 300px;
-		margin: 10px 0 0 0;
+		margin: 0 0 0 0;
 		
-		img {
-			float: right;
-			width: 302px;
-			margin: 0 0 20px 0;
-		}
+		h4.law { margin: 30px 0 0 0;}
+	}
+	
+	img.profile {
+		float: right;
+		width: 302px;
+		margin: 0 0 15px 0;
 	}
 	
 	.blurb.right { float: right;}
@@ -287,6 +289,34 @@
 			width: 290px;
 			height: 40px;
 			margin: 10px 0 0 0;
+		}
+	}
+	
+	p.space { margin: 0 0 20px 0;}
+	
+	ul.wide {
+		width: 620px;
+		margin: 0 0 10px 0; 
+	}
+	
+	ul.full { 
+		width: 620px;
+		margin: 0;
+	}
+	
+	ul.practice.wide {width: 620px;}
+	ul.practice {
+		float: left;
+		width: 290px;
+		padding: 0 0 0 20px;
+		margin: 0 0 20px 0;
+		list-style: disc url("sqpurple.gif");
+		
+		li {
+			font-size: 10px;
+			line-height: 16px;
+			font-weight: 600;
+			color: #434343;
 		}
 	}
 }
