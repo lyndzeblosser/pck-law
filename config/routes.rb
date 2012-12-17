@@ -4,8 +4,7 @@ PckLaw::Application.routes.draw do
   
   get "/:pages" => "static#show"
   
-  get"/attorneys/:pages" => "attorneys#show"
-  
+  get"attorneys/:pages" => "attorneys#show"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
