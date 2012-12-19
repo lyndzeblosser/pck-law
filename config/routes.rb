@@ -2,9 +2,13 @@ PckLaw::Application.routes.draw do
   get "home/index"
   root :to => "home#index"
   
-  get "/:pages" => "static#show"
+  get "/:pages" => "static#show" 
   
   get"attorneys/:pages" => "attorneys#show"
+  get"staff/:pages" => "staff#show"
+  get"resources/:pages" => "resources#show"
+  get"our-approach/:pages" => "our-approach#show" 
+  get"practice-areas/:pages" => "practice-areas#show"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
