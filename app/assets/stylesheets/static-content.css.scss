@@ -29,6 +29,22 @@
 		.seventh {top: 256px;}
 		.eighth {top: 290px;}
 		.ninth {top: 324px;}
+		.tenth {top: 358px;}
+		.eleventh {top: 392px;}
+		.twelfth {top: 426px;}
+		.thirteenth {top: 460px;}
+		.fourteenth {top: 494px;}
+		.fifteenth {top: 528px;}
+		.sixteenth {top: 562px;}
+		.seventeenth {top: 596px;}
+		.eighteenth {top: 630px;}
+		.nineteenth {top: 664px;}
+		.twenty {top: 698px;}
+		.twenty-first {top: 732px;}
+		.twenty-second {top: 766px;}
+		.twenty-third {top: 800px;}
+		.twenty-fourth {top: 834px;}
+		.twenty-fifth {top: 868px;}
 		
 		.sidebar.mid { min-height: 900px;}
 		.sidebar.long { min-height: 1200px;}
@@ -178,6 +194,16 @@
 				color: #384E5D;
 			}
 			a:hover { color: #6e808a;}
+			
+			ul.wide { 
+				width: 620px;
+				margin: 10px 0 10px 0;
+				
+				li { 
+					line-height: 16px;
+					padding: 0 0 10px 0;
+				}
+			}
 			
 			ul {
 				float: left;
