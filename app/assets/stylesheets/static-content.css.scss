@@ -74,14 +74,14 @@
 			
 			.directory {
 				float: left;
-				width: 300px;
+				width: 290px;
 				height: 26px;
 				margin: 20px 0 5px 10px;
 				background: url(/assets/static/sidenav/title/practice-areas.png) no-repeat top left;
 				
 				a {
 					display: block;
-					width: 300px;
+					width: 290px;
 					height: 26px;
 				}
 			}
@@ -228,13 +228,25 @@
 
 
 #attorneys-page {
+	.directory.staff { 
+		width: 290px;
+		height: 34px;
+		margin: 0 0 0 10px;
+		background: url(/assets/static/sidenav/title/staff.png) no-repeat top left;
+		
+		a { height: 34px;}
+	}
+	
 	.directory {
 		float: left;
-		width: 300px;
+		width: 290px;
 		height: 26px;
 		margin: 20px 0 5px 10px;
 		background: url(/assets/static/sidenav/title/attorneys.png) no-repeat top left;
 	}
+	
+	nav.none { padding: 0;}
+	nav.staff { border-top: 1px solid #d0dce3;}
 	
 	span {
 		float: left;
@@ -306,6 +318,7 @@
 			}
 		}
 		
+		.phone.ext-none { padding: 0 60px 0 0;}
 		.phone { 
 			float: right;
 			padding: 0 20px 0 0;
@@ -328,12 +341,13 @@
 		width: 620px;
 		margin: 0 0 10px 0; 
 	}
-	
+	ul.full.space { margin: 0 0 10px 0;}
 	ul.full { 
 		width: 620px;
 		margin: 0;
 	}
 	
+	ul.practice.right { padding: 20px 0 0 0;}
 	ul.practice.wide {width: 620px;}
 	ul.practice {
 		float: left;
@@ -354,7 +368,7 @@
 #resources-page {
 	.directory {
 		float: left;
-		width: 300px;
+		width: 290px;
 		height: 26px;
 		margin: 20px 0 5px 10px;
 		background: url(/assets/static/sidenav/title/resources.png) no-repeat top left;
@@ -384,7 +398,7 @@
 #our-approach-page {
 	.directory {
 		float: left;
-		width: 300px;
+		width: 290px;
 		height: 26px;
 		margin: 20px 0 5px 10px;
  		background: url(/assets/static/sidenav/title/our-approach.png) no-repeat top left;
