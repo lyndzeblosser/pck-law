@@ -6,16 +6,35 @@
 			<div class="directory">
 				<%= link_to('', '/attorneys') %>
 			</div>
-			<nav>
+			<nav class="none">
 				<ul>
 					<li><%= link_to('Randall A. Pentiuk', '/attorneys/randall-pentiuk') %></li>
 					<li><%= link_to('Joseph G. Couvreur', '/attorneys/joseph-couvreur') %></li>
 					<li><%= link_to('Kurt M. Kobiljak', '/attorneys/kurt-kobiljak') %></li>
-					<li><%= link_to('Kerry Lee Morgan', '/attorneys/kerry-morgan') %></li>
-					<li><%= link_to('Michael P. Hurley', '/attorneys/michael-hurley') %></li>
 					<li><%= link_to('Creighton D. Gallup', '/attorneys/creighton-gallup') %></li>
+					<li><%= link_to('Michael P. Hurley', '/attorneys/michael-hurley') %></li>
+					<li><%= link_to('Kerry Lee Morgan', '/attorneys/kerry-morgan') %></li>
 					<li><%= link_to('April Knoch', '/attorneys/april-knoch') %></li>
 					<li><%= link_to('Brittny K. Harris', '/attorneys/brittny-harris') %></li>
+					<li><%= link_to('Roger Lee', '/attorneys/roger-lee') %></li>
+				</ul>
+			</nav>
+
+			<div class="directory staff">
+				<%= link_to('', '/attorneys') %>
+			</div>
+			<nav class="staff">
+				<ul>
+					<li><%= link_to('Patricia Bartown', '/staff/patricia-bartown') %></li>
+					<li><%= link_to('Patti Drobot', '/staff/patti-drobot') %></li>
+					<li><%= link_to('Scott Leake', '/staff/scott-leake') %></li>
+					<li><%= link_to('Keith Lenard', '/staff/keith-lenard') %></li>
+					<li><%= link_to('Jill Lilly', '/staff/jill-lilly') %></li>
+					<li><%= link_to('Cheri Oates', '/staff/cheri-oates') %></li>
+					<li><%= link_to('Brenda Presson', '/staff/brenda-presson') %></li>
+					<li><%= link_to('Ann Shaw', '/staff/ann-shaw') %></li>
+					<li><%= link_to('Lori Syc', '/staff/lori-syc') %></li>
+					<li><%= link_to('Karen Zurbo-Miller', '/staff/karen-zurbo-miller') %></li>
 				</ul>
 			</nav>
 		</div>
@@ -38,7 +57,9 @@
 					<i>Managing Shareholder</i>
 
 					<h4>AREAS OF PRACTICE</h4>
-					<h5>General Practice</h5>
+					<h5>Housing Cooperative | </br>
+						Litigation Law | and more...</h5>
+	
 				</div>
 				
 				<div class="email">
@@ -86,11 +107,11 @@
 				
 				<div class="details">
 					<h3>KURT M. KOBILJAK</h3>
-					<i>Shareholder Partner</i>
+					<i>Shareholder</i>
 
 					<h4>AREAS OF PRACTICE</h4>
-					<h5>Condominium Asso. | Estate</br>
-						Civil Defense Litigation | more...
+					<h5>Civil Defense Litigation</br>
+						Estate Planning | and more...
 					</h5>
 				</div>
 				
@@ -108,15 +129,66 @@
 			</div>
 			
 			<div class="blurb right">
+				<%= image_tag'static/attorneys/profile-small-pic/creighton-d-gallup.png', :alt => 'Creighton D. Gallup Attorney at PCK Law' %>
+				
+				<div class="details">
+					<h3>CREIGHTON D. GALLUP</h3>
+					<i>Partner</i>
+
+					<h4>AREAS OF PRACTICE</h4>
+					<h5>Civil Litigation | Family Law </br>
+					Landlord Tenant Law</h5>
+				</div>
+				
+				<div class="email">
+					<h4>EMAIL</h4>
+					<h5><%= mail_to('cgallup@pck-law.com', 'cgallup@pck-law.com') %></h5>
+				</div>
+				
+				<div class="phone">
+					<h4>PHONE</h4>
+					<h5>(734) 281-7100 ext. 108</h5>
+				</div>
+				
+				<%= link_to('','/attorneys/creighton-gallup') %>
+			</div>
+		
+			<div class="blurb">
+				<%= image_tag'static/attorneys/profile-small-pic/michael-p-hurley.png', :alt => 'Michael P. Hurley Attorney at PCK Law' %>
+				
+				<div class="details">
+					<h3>MICHAEL P. HURLEY</h3>
+					<i>Attorney</i>
+
+					<h4>AREAS OF PRACTICE</h4>
+					<h5>Municipal | Criminal Law</br>
+						Litigation Law | Landlord Tenant
+					</h5>
+				</div>
+				
+				<div class="email">
+					<h4>EMAIL</h4>
+					<h5><%= mail_to('mhurley@pck-law.com', 'mhurley@pck-law.com') %></h5>
+				</div>
+				
+				<div class="phone">
+					<h4>PHONE</h4>
+					<h5>(734) 281-7100 ext. 107</h5>
+				</div>
+				
+				<%= link_to('','/attorneys/michael-hurley') %>
+			</div>
+		
+			<div class="blurb right">
 				<%= image_tag'static/attorneys/profile-small-pic/kerry-lee-morgan.png', :alt => 'Kerry Lee Morgan Attorney at PCK Law' %>
 
 				<div class="details">
 					<h3>KERRY LEE MORGAN</h3>
-					<i>PCK Of Counsel Attorney</i>
+					<i>Counsel Attorney</i>
 
 					<h4>AREAS OF PRACTICE</h4>
 					<h5>Employment Law and Litigation</br>
-					Civil Litigation | more...
+					Civil Litigation | and more...
 					</h5>
 				</div>
 
@@ -132,66 +204,18 @@
 
 				<%= link_to('','/attorneys/kerry-morgan') %>
 			</div>
-
 			
-			
-			<div class="blurb">
-				<%= image_tag'static/attorneys/profile-small-pic/michael-p-hurley.png', :alt => 'Michael P. Hurley Attorney at PCK Law' %>
-				
-				<div class="details">
-					<h3>MICHAEL P. HURLEY</h3>
-					<i>Attorney At Law</i>
-
-					<h4>AREAS OF PRACTICE</h4>
-					<h5>General Practice</h5>
-				</div>
-				
-				<div class="email">
-					<h4>EMAIL</h4>
-					<h5><%= mail_to('mhurley@pck-law.com', 'mhurley@pck-law.com') %></h5>
-				</div>
-				
-				<div class="phone">
-					<h4>PHONE</h4>
-					<h5>(734) 281-7100 ext. 107</h5>
-				</div>
-				
-				<%= link_to('','/attorneys/michael-hurley') %>
-			</div>
-			
-			<div class="blurb right">
-				<%= image_tag'static/attorneys/profile-small-pic/creighton-d-gallup.png', :alt => 'Creighton D. Gallup Attorney at PCK Law' %>
-				
-				<div class="details">
-					<h3>CREIGHTON D. GALLUP</h3>
-					<i>Attorney At Law</i>
-
-					<h4>AREAS OF PRACTICE</h4>
-					<h5>General Practice</h5>
-				</div>
-				
-				<div class="email">
-					<h4>EMAIL</h4>
-					<h5><%= mail_to('cgallup@pck-law.com', 'cgallup@pck-law.com') %></h5>
-				</div>
-				
-				<div class="phone">
-					<h4>PHONE</h4>
-					<h5>(734) 281-7100 ext. 108</h5>
-				</div>
-				
-				<%= link_to('','/attorneys/creighton-gallup') %>
-			</div>
 			
 			<div class="blurb">
 				<%= image_tag'static/attorneys/profile-small-pic/april-knoch.png', :alt => 'April Koch Attorney at PCK Law' %>
 				
 				<div class="details">
 					<h3>APRIL KNOCH</h3>
-					<i>Attorney At Law</i>
+					<i>Associate Attorney</i>
 
 					<h4>AREAS OF PRACTICE</h4>
-					<h5>General Practice</h5>
+					<h5>General Practice | Collection Law<br>
+					Condominium Law | and more...</h5>
 				</div>
 				
 				<div class="email">
@@ -212,7 +236,7 @@
 				
 				<div class="details">
 					<h3>BRITTNY K. HARRIS</h3>
-					<i>Attorney At Law &amp; Law Marketing</i>
+					<i>Associate Attorney and Marketing Director</i>
 
 					<h4>AREAS OF PRACTICE</h4>
 					<h5>General Practice</h5>
@@ -229,6 +253,31 @@
 				</div>
 				
 				<%= link_to('','/attorneys/brittny-harris') %>
+			</div>
+			
+			<div class="blurb">
+				<%= image_tag'static/attorneys/profile-small-pic/missing-man.png', :alt => 'Roger Lee Contract Attorney at PCK Law' %>
+				
+				<div class="details">
+					<h3>Roger Lee</h3>
+					<i>Illinois Contract Attorney</i>
+
+					<h4>AREAS OF PRACTICE</h4>
+					<h5>General Practice</h5>
+					<h5>Landlord Tenant</h5>
+				</div>
+				
+				<div class="email">
+					<h4>EMAIL</h4>
+					<h5><%= mail_to('info@pck-law.com', 'info@pck-law.com') %></h5>
+				</div>
+				
+				<div class="phone ext-none">
+					<h4>PHONE</h4>
+					<h5>(734) 281-7100</h5>
+				</div>
+				
+				<%= link_to('','/attorneys/roger-lee') %>
 			</div>
 
 			<span class="line">Our Staff Profile</span>
@@ -258,7 +307,7 @@
 			</div>
 			
 			<div class="blurb right">
-				<%# image_tag'static/attorneys/profile-small-pic/april-knoch.png', :alt => 'Patti Drobot Legal Assistant' %>
+				<%= image_tag'static/attorneys/profile-small-pic/missing-woman.png', :alt => 'Patti Drobot Legal Assistant' %>
 				
 				<div class="details">
 					<h3>PATTI DROBOT</h3>

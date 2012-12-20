@@ -6,17 +6,35 @@
 			<div class="directory">
 				<%= link_to('', '/attorneys') %>
 			</div>
-			<nav>
+			<nav class="none">
 				<ul>
 					<li><%= link_to('Randall A. Pentiuk', '/attorneys/randall-pentiuk') %></li>
 					<li><%= link_to('Joseph G. Couvreur', '/attorneys/joseph-couvreur') %></li>
 					<li><%= link_to('Kurt M. Kobiljak', '/attorneys/kurt-kobiljak') %></li>
-					<li><%= link_to('Kerry Lee Morgan', '/attorneys/kerry-morgan') %></li>
-					<li><%= link_to('Michael P. Hurley', '/attorneys/michael-hurley') %></li>
 					<li><%= link_to('Creighton D. Gallup', '/attorneys/creighton-gallup') %></li>
+					<li><%= link_to('Michael P. Hurley', '/attorneys/michael-hurley') %></li>
+					<li><%= link_to('Kerry Lee Morgan', '/attorneys/kerry-morgan') %></li>
 					<li><%= link_to('April Knoch', '/attorneys/april-knoch') %></li>
 					<li><%= link_to('Brittny K. Harris', '/attorneys/brittny-harris') %></li>
 					<li><%= link_to('Roger Lee', '/attorneys/roger-lee') %></li>
+				</ul>
+			</nav>
+
+			<div class="directory staff">
+				<%= link_to('', '/attorneys') %>
+			</div>
+			<nav class="staff">
+				<ul>
+					<li><%= link_to('Patricia Bartown', '/staff/patricia-bartown') %></li>
+					<li><%= link_to('Patti Drobot', '/staff/patti-drobot') %></li>
+					<li><%= link_to('Scott Leake', '/staff/scott-leake') %></li>
+					<li><%= link_to('Keith Lenard', '/staff/keith-lenard') %></li>
+					<li><%= link_to('Jill Lilly', '/staff/jill-lilly') %></li>
+					<li><%= link_to('Cheri Oates', '/staff/cheri-oates') %></li>
+					<li><%= link_to('Brenda Presson', '/staff/brenda-presson') %></li>
+					<li><%= link_to('Ann Shaw', '/staff/ann-shaw') %></li>
+					<li><%= link_to('Lori Syc', '/staff/lori-syc') %></li>
+					<li><%= link_to('Karen Zurbo-Miller', '/staff/karen-zurbo-miller') %></li>
 				</ul>
 			</nav>
 		</div>
@@ -24,7 +42,7 @@
 		<div class="copy">
 			<h1>Attorneys</h1>
 			
-			<h2>Kerry Lee Morgan- Attorney at Law</h2>
+			<h2>Kerry Lee Morgan- Of Counsel</h2>
 			
 			<%= image_tag'static/attorneys/profile-large-pic/kerry-lee-morgan.jpg', :alt => 'Kerry Lee Morgan Attorney at PCK Law', :class => 'profile' %>
 			
@@ -32,7 +50,7 @@
 				<h5><%= mail_to('kmorgan@pck-law.com', 'kmorgan@pck-law.com') %> | Phone: (734) 281-7100 ext. 103</h5>
 				
 				<h4 class="law">ADMISSIONS</h4>
-				<h5>Practice in Michigan Washington D.C., and Virginia</h5>
+				<h5>Practice in Michigan Washington D.C.and Virginia</h5>
 				
 				<h4>LAW SCHOOL</h4>
 				<h5>Detroit College of Law, J.D.</h5>
@@ -47,59 +65,32 @@
 
 				<h4>AREAS OF PRACTICE</h4>
 					<ul class="practice">
-						<li>Civil Rights and Discrimination</li>
-						<li>Civil Litigation</li>
-						<li>Educational Law</li>
+						<li>Constitutional Law</li>
+						<li>Education Law</li>
+						<li>Employment Discrimination</li>
 						<li>Employment Law and Litigation</li>
-					</ul> 
+					</ul> 	
 			</div>
 
-			<ul class="practice">
-				<li>Municipal Solid Waste</li>
-				<li>Wrongful Discharge</li>
+			<ul class="practice right">
+				<li>Environmental Law</li>
+				<li>Federal Firearms Law</li>
+				<li>Municipal Law</li>
 			</ul>
 			
 			<div class="cb"></div>
 			
-			<h4>Professional Affiliations</h4>
-			<ul class="practice wide">
-				<li>State Bar of Michigan</li>
-				<li>Virginia State Bar</li>
-				<li>District of Columbia Bar</li>
-				<li>U.S. District Court, Eastern and Western Districts of Michigan</li>
-				<li>U.S. Court of Appeals, Sixth Circuit</li>
-				<li>U.S. Supreme Court</li>
-			</ul>
+			<p>With over 30 years experience providing legal counsel to Federal, Municipal and corporate clients in a legal and regulatory environment, Mr. Morgan has developed a broad and diverse legal background. Along the way he has become a compelling writer and discerning researcher with key ability to predict risk and long term impact of legal decisions and litigation. This ability helps reduce costs by accurately prediction likely range of outcomes.</p>
 
-			<div class="cb"></div>
-			
-				<p>Kerry Lee Morgan is "Of Counsel" to Pentiuk, Couvreur, &amp; Kobiljak, P.C. He serves as Assistant General Counsel for Royal Oak Township. His chief areas of practice involve municipal law, employment discrimination, litigation, environmental law and educational policy. Prior to his current legal affiliation, he served as an Attorney-Advisor with the United States Commission on Civil Rights in Washington D.C.</p>
+			<p>Currently "Of Counsel" to Pentiuk, Couvreur, &amp; Kobiljak, P.C., his chief areas of practice involve municipal law, employment discrimination, environmental law and educational policy. Prior to his current legal affiliation, he served as an Attorney-Advisor with the <%= link_to('United States Commission on Civil Rights', 'http://www.civilrights.org/enforcement/commission/', :target => '_blank') %> in Washington D.C.</p>
 
-				<p>In addition to practicing law, since 1980, Mr. Morgan received his Masters of Arts, magna cum laude, in Public Policy from Regent University. He has also written a number of thought-provoking articles in the areas of natural law and unalienable rights. He recently completed an extensive legal review of religious liberty principles and Supreme Court cases titled, Unalienable Rights, Equality and The Free Exercise of Religion. In 1997, University Press of America published his book, Real Choice, Real Freedom in American Education, a scholarly work that articulates the legal and Constitutional case for parental rights and against governmental control of American Education.</p>
+			<p>In addition to practicing law since 1980, Mr. Morgan received his Masters of Arts, magna cum laude, in Public Policy from <%= link_to('Regent University.', 'http://www.regent.edu/', :target => '_blank') %> He has also written a number of thought-provoking articles in the areas of natural law and unalienable rights. He researched and wrote an extensive legal review of religious liberty principles and Supreme Court cases titled, <%= link_to('“Unalienable Rights, Equality and The Free Exercise of Religion.”', 'http://www.lonang.com/conlaw/7/c71f.htm', :target => '_blank')%></p>
 
-				<p class="space">Mr. Morgan's 2006 bid for the Michigan Supreme Court was featured in Michigan Lawyers Weekly. The interview focused on his commitment to natural rights and belief that they must be protected more stringently than they have been in the recent past. Also discussed was his legal philosophy -- " The Constitution [and] the statutes, they are the organic documents that make up our laws," Morgan said. "The job of the court is to go back and determine what the constitution says, not what the court says the constitution says." Mr. Morgan also ran for University of Michigan Regent in 2008.</p>
+			<p>A published author as well, <%= link_to('University Press of America', 'https://rowman.com/Imprint/UPA', :target => '_blank') %> published his book, <%= link_to('Real Choice, Real Freedom in American Education,', 'http://www.ocpathink.org/articles/388', :target => '_blank') %> a scholarly work that articulates the legal and Constitutional case for parental rights and against governmental control of American Education. What to learn more, <%= link_to('get your copy here.', 'http://www.amazon.com/exec/obidos/ASIN/076180854X/oklahomacouncilo', :target => '_blank') %></p>
 
-				<h3>Community Associations / Services</h3>
+			<p>He soon plans to release an Inquiry into the Constitutional principles of nullification combined with principles of liberty grounded in the law of nature and the Declaration of Independence.</p>
 
-				<p class="space">Mr. Morgan founded the Consumer Law Group, P.C., in 2002. The Consumer Law Group attracts clients who understand the compelling need to reacquire their individual natural rights and historic liberties. Please contact Mr. Morgan directly at 734-281-7100 for more information.</p>
-				
-				<h3>Publications</h3>
-				<ul class="wide">
-				   	<li>Unalienable Rights, Equality and the Free Exercise of Religion.</li>
-				   	<li>The Unalienable Right of Government by Consent and The Independent Agency.</li>
-				   	<li>The Declaration of Independence and American Education.</li>
-				   	<li>Real Choice, Real Freedom in American Education.</li>
-				</ul>
-
-				<h3>Biography</h3>
-
-				<p class="space">Survey Editor, 1980. License, Federal Firearms, 1991-2003. Author: First We Defend Law, Then We Defend Life: What The Pro-Life Movement Needs After 30 Years of Failure, 2005; "Real Choice, Real Freedom in American Education, The Legal and Constitutional Case for Parental Rights and Against Governmental Control of American Education," University Press of America, 1997, (ISBN 0-7618-0855-8); The Unalienable Right of Government by Consent and the Independent Agency, J. Christian Juris, 33, 1990; "A Declaration of Universal Rights," CFJ International, 1988; A Constitutional Presidency, J. Christian Juris, 85, 1987; The Declaration of Independence and American Education, J. Christian Juris, 77, 1986; Comment, Secular Humanism and Equal Protection: Focusing on Marital and Parental Status as Factors Determining Permissible Gender-Based Classifications and Their Impact on Family Integrity, Detroit College Law Review 821, 1980. Note, People v. Wheeler: Has California Really Assured Impartial Juries by Revision of the Peremptory Challenge?, Detroit College Law Review, 527, 1979. Adjunct Professor, Business Law, William Tyndale College, Farmington Hills, Michigan, 1995-2002.</p>
-
-				<h3>Reported Cases</h3>
-
-				<p>For Amicus, Smith v. Board of Sch. Comm'rs, 827 F.2d 684 (11th Cir. 1987); Grutter v. Bollinger, 16 F. Supp. 2d 797 (E.D. Mich. 1998), rev.188 F.3d 394 (6th Cir. 1999); Gratz v. Bollinger, 122 F. Supp. 2d 811 (E.D. Mich. 2000), subsequent proceeding, 135 F. Supp. 2d 790 (E.D. Mich. 2001); On Brief, Gratz v. Bollinger, 539 U.S. 244 (2003); On Brief, Grutter v. Bollinger, 539 U.S. 306 (2003); United States ex rel. Mich. Natural Res. Comm'n v. Wayne County, 280 F. Supp. 2d 726 (E.D. Mich. 2003); United States v. Wayne County, 369 F.3d 508 (6th Cir. 2004); United States v. Wayne County, 406 F. Supp. 2d 760 (E.D. Mich. 2005); On Brief, City of Riverview v. Surface Transp. Bd., 398 F.3d 434 (6th Cir. 2005); Coalition v. Granholm, 240 F.R.D. 368 (E.D. Mich. 2006); Coalition to Defend Affirmative Action v. Granholm, 473 F.3d 237 (6th Cir. 2006); subsequent proceeding 501 F.3d 775 (6th Cir. 2007); Morgan v. DOJ, BATF, cert. den. 547 U.S. 1098 (2006); Morgan v. United States DOJ, 473 F. Supp. 2d 756 (E.D. Mich. 2007) aff. 509 F.3d 273 (6th Cir. 2007); People v. Walters, 266 Mich. App. 341 (Mich. Ct. App. 2005); City of Riverview v. Sibley Limestone, 270 Mich. App. 627 (Mich. Ct. App. 2006).</p>
-
-				<%= link_to("View Kerry Lee Morgan's Martindale-Hubbell Profile Here", 'http://www.martindale.com/Kerry-Lee-Morgan/2161158-lawyer.htm', :target => '_blank') %>
+			<p>In his spare time he volunteers as legal advisor to COVE, a homeschooling association of parents and teachers dedicated to advancing the rights of parents in regard to the education and upbringing of their own children free from state regulation and control. A former machine gun dealer, Mr. Morgan also enjoys the shooting sports and has provided legal counsel to owners and dealers alike.</p>
 		</div>
 	</div>
 </div>
