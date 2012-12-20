@@ -2,7 +2,7 @@
 	<div class="wrapper">
 		<div class="indicator"></div>
 		
-		<div class="sidebar ex-long">
+		<div class="sidebar">
 			<div class="directory">
 				<%= link_to('', '/attorneys') %>
 			</div>
@@ -19,15 +19,24 @@
 					<li><%= link_to('Roger Lee', '/attorneys/roger-lee') %></li>
 				</ul>
 			</nav>
-
+			
+			<div class="directory management">
+				<%= link_to('', '/attorneys') %>
+			</div>
+			<nav class="middle">
+				<ul>
+					<li><%= link_to('Scott Leake', '/staff/scott-leake') %></li>
+				</ul>
+			</nav>
+			
 			<div class="directory staff">
 				<%= link_to('', '/attorneys') %>
 			</div>
 			<nav class="staff">
 				<ul>
-					<li><%= link_to('Patricia Bartown', '/staff/patricia-bartown') %></li>
+					<li><%= link_to('Patricia Bartow', '/staff/patricia-bartow') %></li>
 					<li><%= link_to('Patti Drobot', '/staff/patti-drobot') %></li>
-					<li><%= link_to('Scott Leake', '/staff/scott-leake') %></li>
+					<li><%= link_to('John W. Dytyniak', '/staff/john-dytyniak') %></li>
 					<li><%= link_to('Keith Lenard', '/staff/keith-lenard') %></li>
 					<li><%= link_to('Jill Lilly', '/staff/jill-lilly') %></li>
 					<li><%= link_to('Cheri Oates', '/staff/cheri-oates') %></li>
@@ -280,6 +289,33 @@
 				<%= link_to('','/attorneys/roger-lee') %>
 			</div>
 
+			<span class="line">Management Profile</span>
+			
+			<div class="blurb">
+				<%= image_tag'static/attorneys/profile-small-pic/scott-leake.png', :alt => 'Scott Leake Office Manager' %>
+				
+				<div class="details">
+					<h3>SCOTT LEAKE</h3>
+					<i>Office Manager</i>
+
+					<h4>RESPONSIBILITIES</h4>
+					<h5>Human Resources | Accounting</br>
+						IT | Marketing | and more...</h5>
+				</div>
+				
+				<div class="email">
+					<h4>EMAIL</h4>
+					<h5><%= mail_to('sleake@pck-law.com', 'sleake@pck-law.com') %></h5>
+				</div>
+				
+				<div class="phone">
+					<h4>PHONE</h4>
+					<h5>(734) 281-7100 ext. 117</h5>
+				</div>
+				
+				<%= link_to('','/staff/scott-leake') %>
+			</div>
+				
 			<span class="line">Our Staff Profile</span>
 			
 			<div class="blurb">
@@ -303,7 +339,7 @@
 					<h5>(734) 281-7100 ext. 114</h5>
 				</div>
 				
-				<%= link_to('','/') %>
+				<%= link_to('','/staff/patricia-bartow') %>
 			</div>
 			
 			<div class="blurb right">
@@ -324,34 +360,34 @@
 				
 				<div class="phone">
 					<h4>PHONE</h4>
-					<h5>(734) 281-7100 ext. 000?</h5>
+					<h5>(734) 281-7100 ext. 102</h5>
 				</div>
 				
-				<%= link_to('','/') %>
+				<%= link_to('','/staff/patti-drobot') %>
 			</div>
 			
 			<div class="blurb">
-				<%= image_tag'static/attorneys/profile-small-pic/scott-leake.png', :alt => 'Scott Leake Office Manager' %>
+				<%= image_tag'static/attorneys/profile-small-pic/missing-man.png', :alt => 'Missing Office Manager' %>
 				
 				<div class="details">
-					<h3>SCOTT LEAKE</h3>
-					<i>Office Manager</i>
+					<h3>John W. Dytyniak</h3>
+					<i>Legal Assistant</i>
 
 					<h4>AREAS OF PRACTICE</h4>
-					<h5>General Practice</h5>
+					<h5>Civil Litigation</h5>
 				</div>
 				
 				<div class="email">
 					<h4>EMAIL</h4>
-					<h5><%= mail_to('sleake@pck-law.com', 'sleake@pck-law.com') %></h5>
+					<h5><%= mail_to('jdytyniak@pck-law.com', 'jdytyniak@pck-law.com') %></h5>
 				</div>
 				
 				<div class="phone">
 					<h4>PHONE</h4>
-					<h5>(734) 281-7100 ext. 117</h5>
+					<h5>(734) 281-7100 ext. 124</h5>
 				</div>
 				
-				<%= link_to('','/') %>
+				<%= link_to('','/staff/john-dytyniak') %>
 			</div>
 			
 			<div class="blurb right">
@@ -359,10 +395,11 @@
 				
 				<div class="details">
 					<h3>KEITH LENARD</h3>
-					<i>Legal Clerk</i>
+					<i>Administrative Assistant</i>
 
 					<h4>AREAS OF PRACTICE</h4>
-					<h5>Civil Litigation</h5>
+					<h5>Labor &amp; Employment Matters</br>
+						Civil Litigation | and more...</h5>
 				</div>
 				
 				<div class="email">
@@ -372,10 +409,10 @@
 				
 				<div class="phone">
 					<h4>PHONE</h4>
-					<h5>(734) 281-7100 ext. 101</h5>
+					<h5>(734) 281-7100 ext. 100</h5>
 				</div>
 				
-				<%= link_to('','/') %>
+				<%= link_to('','/staff/keith-lenard') %>
 			</div>
 			
 			<div class="blurb">
@@ -399,7 +436,7 @@
 					<h5>(734) 281-7100 ext. 118</h5>
 				</div>
 				
-				<%= link_to('','/') %>
+				<%= link_to('','/staff/jill-lilly') %>
 			</div>
 			
 			<div class="blurb right">
@@ -423,7 +460,7 @@
 					<h5>(734) 281-7100 ext. 122</h5>
 				</div>
 				
-				<%= link_to('','/') %>
+				<%= link_to('','/staff/cheri-oates') %>
 			</div>
 			
 			<div class="blurb">
@@ -447,7 +484,7 @@
 					<h5>(734) 281-7100 ext. 104</h5>
 				</div>
 				
-				<%= link_to('','/') %>
+				<%= link_to('','/staff/brenda-presson') %>
 			</div>
 			
 			<div class="blurb right">
@@ -471,7 +508,7 @@
 					<h5>(734) 281-7100 ext. 115</h5>
 				</div>
 				
-				<%= link_to('','/') %>
+				<%= link_to('','/staff/ann-shaw') %>
 			</div>
 			
 			<div class="blurb">
@@ -495,7 +532,7 @@
 					<h5>(734) 281-7100 ext. 120</h5>
 				</div>
 				
-				<%= link_to('','/') %>
+				<%= link_to('','/staff/lori-syc') %>
 			</div>
 			
 			<div class="blurb right">
@@ -519,7 +556,7 @@
 					<h5>(734) 281-7100 ext. 119</h5>
 				</div>
 				
-				<%= link_to('','/') %>
+				<%= link_to('','/staff/karen-zurbo-miller') %>
 			</div>
 			
 		</div>

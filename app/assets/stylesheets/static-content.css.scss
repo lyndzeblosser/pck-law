@@ -124,6 +124,11 @@
 			}
 		}
 		
+		.copy.wide { 
+			float: left;
+			width: 940px;
+		}
+		
 		.copy {
 			float: right;
 			width: 620px;
@@ -230,11 +235,20 @@
 #attorneys-page {
 	.directory.staff { 
 		width: 290px;
-		height: 34px;
+		height: 33px;
 		margin: 0 0 0 10px;
 		background: url(/assets/static/sidenav/title/staff.png) no-repeat top left;
 		
-		a { height: 34px;}
+		a { height: 33px;}
+	}
+	
+	.directory.management { 
+		width: 290px;
+		height: 33px;
+		margin: 0 0 0 10px;
+		background: url(/assets/static/sidenav/title/management.png) no-repeat top left;
+		
+		a { height: 33px;}
 	}
 	
 	.directory {
@@ -246,7 +260,11 @@
 	}
 	
 	nav.none { padding: 0;}
-	nav.staff { border-top: 1px solid #d0dce3;}
+	nav.middle { 
+		padding: 0;
+		border-top: 1px solid #d0dce3;
+	}
+	nav.staff { }
 	
 	span {
 		float: left;
