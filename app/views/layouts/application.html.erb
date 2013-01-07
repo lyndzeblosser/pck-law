@@ -35,8 +35,6 @@
   <%- # Uncomment if you are specifically targeting less enabled mobile browsers -%>
   <%#= stylesheet_link_tag "handheld", :media => "handheld" %>
  
-  <%= csrf_meta_tag %>
- 
   <%- # All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -%>
   <%= javascript_include_tag "application" 'modernizr-1.7.min.js' %>
 </head>
@@ -260,7 +258,9 @@
 	
   <%- # Javascript at the bottom for fast page loading -%>
   <%- # Grab Google CDN's jQuery. fall back to local if necessary -%>
+  <%= csrf_meta_tag %>
   <script src="scripts/wufoo.js"></script>
+
   <%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js' %>
   <%= javascript_tag %{!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery-1.5.2.min.js"%3E%3C/script%3E'))} %>
 
